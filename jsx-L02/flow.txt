@@ -1,0 +1,6 @@
+1. Intialise an empty nodejs application by using `npm init -y` command in terminal.
+2. In the root project folder create `public/index.html` and write some HTML code inside.
+3. In the root project folder create `src/index.js` and write some javascript code inside.
+4. install `react` and `react-dom` libraries using `npm i react` and `npm i react-dom` respectively.
+5. Upon installing the code of react & react-dom gets downloaded to our project into `node_modules`.
+6. All the downloaded libraries/packages code can be used inside our application anywhere (src/*).
