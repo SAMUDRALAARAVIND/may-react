@@ -1,0 +1,47 @@
+body {
+  background-color: #0e172a;
+  margin: 0;
+  color: #fff;
+}
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  .experience-card {
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    line-height: 1.6;
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      .chip {
+        border-radius: 20px;
+        background-color: #142a39;
+        color: #5de8d2;
+        font-size: 0.7rem;
+        padding: 5px 10px;
+      }
+    }
+  }
+  .experience-card:hover {
+    background-color: #43578172;
+  }
+}
