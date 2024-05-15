@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import FunctionalComponent from "./FunctionalComponent";
+import { Input } from "./Input";
+import Uplifting from "./Uplifting";
+import EffectsExample from "./Effect";
 
 /**
   1. Life cycle phases/methods of a react component
@@ -49,4 +52,4 @@ class Toggle extends Component {
   }
 }
 
-root.render(<FunctionalComponent />);
+root.render(<EffectsExample />);

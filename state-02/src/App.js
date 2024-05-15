@@ -11,12 +11,76 @@ class App extends Component {
     this.setState({ count: this.state.count + 1 });
   };
 
+  navigate = (event) => {
+    const targetId = event.target.getAttribute("data-href"); // "#test"
+    const element = document.querySelector(`#${targetId}`);
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   render() {
     console.log("in render");
     return (
       <div style={{ padding: "10px", border: "1px solid blue" }}>
         <h1>Class Component, {this.state.count}</h1>
+        <button data-href="test" onClick={this.navigate}>
+          Scroll to test element
+        </button>
+
         <button onClick={this.increment}>Increment</button>
+        <div>
+          In this example There's a button that when clicked calls the
+          smoothScrollTo() function. This function takes the ID of the target
+          element as an argument. It finds the target element using
+          document.querySelector(). Then it calls scrollIntoView() on the target
+          element option to make the scroll smooth. You can adjust the
+          smoothness by changing the options passed to scrollIntoView() In this
+          example There's a button that when clicked calls the smoothScrollTo()
+          function. This function takes the ID of the target element as an
+          argument. It finds the target element using document.querySelector().
+          Then it calls scrollIntoView() on the target element option to make
+          the scroll smooth. You can adjust the smoothness by changing the
+          options passed to scrollIntoView() In this example There's a button
+          that when clicked calls the smoothScrollTo() function. This function
+          takes the ID of the target element as an argument. It finds the target
+          element using document.querySelector(). Then it calls scrollIntoView()
+          on the target element option to make the scroll smooth. You can adjust
+          the smoothness by changing the options passed to scrollIntoView() In
+          this example There's a button that when clicked calls the
+          smoothScrollTo() function. This function takes the ID of the target
+          element as an argument. It finds the target element using
+          document.querySelector(). Then it calls scrollIntoView() on the target
+          element option to make the scroll smooth. You can adjust the
+          smoothness by changing the options passed to scrollIntoView() In this
+          example There's a button that when clicked calls the smoothScrollTo()
+          function. This function takes the ID of the target element as an
+          argument. It finds the target element using document.querySelector().
+          Then it calls scrollIntoView() on the target element option to make
+          the scroll smooth. You can adjust the smoothness by changing the
+          options passed to scrollIntoView() In this example There's a button
+          that when clicked calls the smoothScrollTo() function. This function
+          takes the ID of the target element as an argument. It finds the target
+          element using document.querySelector(). Then it calls scrollIntoView()
+          on the target element option to make the scroll smooth. You can adjust
+          the smoothness by changing the options passed to scrollIntoView() In
+          this example There's a button that when clicked calls the
+          smoothScrollTo() function. This function takes the ID of the target
+          element as an argument. It finds the target element using
+          document.querySelector(). Then it calls scrollIntoView() on the target
+          element option to make the scroll smooth. You can adjust the
+          smoothness by changing the options passed to scrollIntoView() In this
+          example There's a button that when clicked calls the smoothScrollTo()
+          function. This function takes the ID of the target element as an
+          argument. It finds the target element using document.querySelector().
+          Then it calls scrollIntoView() on the target element option to make
+          the scroll smooth. You can adjust the smoothness by changing the
+          options passed to scrollIntoView() In this example There's a button
+          that when clicked calls the smoothScrollTo() function. This function
+          takes the ID of the target element as an argument. It finds the target
+          element using document.querySelector(). Then it calls scrollIntoView()
+          on the target element option to make the scroll smooth. You can adjust
+          the smoothness by changing the options passed to scrollIntoView()
+          <b id="test">Bold text</b>
+        </div>
       </div>
     );
   }
