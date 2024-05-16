@@ -1,0 +1,44 @@
+.App {
+  margin: 20px 50px;
+  box-shadow: 1px 1px 5px #e3e3e3;
+  padding: 20px;
+  border-radius: 10px;
+  .weather-report {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      .temparature {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        .switch {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: #e3e3e3;
+            padding: 0 2px;
+          }
+          button:disabled {
+            color: #000;
+          }
+        }
+        h3 {
+          margin: 0;
+          font-size: 2.4rem;
+        }
+      }
+      .parameters {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
