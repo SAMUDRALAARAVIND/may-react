@@ -1,0 +1,43 @@
+// Mixins => functions
+
+@import "./styles.scss";
+
+// calc()
+
+@mixin rowItem($direction: column, $gap: 30px) {
+  display: flex;
+  flex-direction: $direction;
+  gap: $gap;
+  align-items: center;
+}
+
+$bgColor: #000;
+
+.app {
+  margin-bottom: 500px;
+  .btn {
+    background-color: $bgColor;
+    padding: 5px 10px;
+    border: none;
+    margin: 10px;
+    color: #fff;
+    &:hover {
+      background-color: blue;
+      border-radius: 10px;
+    }
+    &::after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+    }
+  }
+  .container {
+    margin: 20px;
+    @include rowItem();
+  }
+  .test {
+    background-color: blue;
+  }
+}
