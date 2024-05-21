@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .form {
+    width: min(300px, 90vw);
+    box-shadow: 2px 2px 10px #e3e3e3;
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
