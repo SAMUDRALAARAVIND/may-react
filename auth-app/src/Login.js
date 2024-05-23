@@ -1,8 +1,11 @@
 import { Alert, Button, Form, Input } from "antd";
 import { passwordRegexp } from "./Signup";
 import { useState } from "react";
+import { Link, useParams } from "react-router-dom";
 
-export const Login = ({ toggleForm, auth }) => {
+export const Login = ({ auth }) => {
+  // const params = useParams();
+  // console.log(params);
   const [apiStatus, setApiStatus] = useState("init");
 
   const onSubmitForm = async (loginInfo) => {
@@ -59,10 +62,10 @@ export const Login = ({ toggleForm, auth }) => {
         </Button>
       </Form>
       <p>
-        Don't have an account ?
-        <Button onClick={toggleForm} type="link">
+        Don't have an account ?{" "}
+        <Link className="link" to="/signup">
           Signup here
-        </Button>
+        </Link>
       </p>
     </div>
   );

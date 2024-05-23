@@ -1,11 +1,12 @@
 import { Alert, Button, Form, Input, Radio } from "antd";
 import { useForm } from "antd/es/form/Form";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export const passwordRegexp =
   /^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
 
-export const Signup = ({ auth, toggleForm }) => {
+export const Signup = ({ auth }) => {
   const [apiStatus, setApiStatus] = useState("init");
   const [form] = useForm();
 
@@ -104,9 +105,9 @@ export const Signup = ({ auth, toggleForm }) => {
       </Form>
       <p>
         Already have an account ?{" "}
-        <Button onClick={toggleForm} type="link">
+        <Link className="link" to="/login">
           Signin here
-        </Button>
+        </Link>
       </p>
     </div>
   );
