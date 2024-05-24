@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+table {
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  border-collapse: collapse;
+  th {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  th,
+  td {
+    text-align: center;
+    img {
+      width: 50px;
+    }
+  }
+  tr {
+    border-bottom: 1px solid #e3e3e3;
+  }
+}
