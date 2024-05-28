@@ -1,0 +1,20 @@
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  .product-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 4px;
+    border: 1px solid #e3e3e3;
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      align-self: center;
+    }
+  }
+}
