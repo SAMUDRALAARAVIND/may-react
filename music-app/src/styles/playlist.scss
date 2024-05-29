@@ -1,0 +1,30 @@
+.playlists-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  .card {
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #a7a7a7;
+    cursor: pointer;
+    img {
+      height: 200px;
+    }
+    .bottom-box {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin: 5px 0;
+    }
+    &:hover {
+      background-color: #232323;
+    }
+  }
+}
+
+// @media (max-width: 600px) {
+//   .playlists-container {
+//     grid-template-columns: repeat(2, 1fr) !important;
+//   }
+// }

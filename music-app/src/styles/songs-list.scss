@@ -1,0 +1,36 @@
+.songs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .song-card {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40px 50px 10fr 2fr;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    .icon {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .play-btn {
+      display: none;
+    }
+    &:hover {
+      background-color: #232323;
+      .count {
+        display: none;
+      }
+      .play-btn {
+        display: block;
+      }
+    }
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+  }
+}

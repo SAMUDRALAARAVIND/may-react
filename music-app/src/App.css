@@ -1,0 +1,13 @@
+.app {
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 10fr 1fr;
+  gap: 10px;
+  background-color: #000;
+  .music-player {
+    grid-column: 1 / 3;
+  }
+}
