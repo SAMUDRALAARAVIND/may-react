@@ -1,7 +1,7 @@
 import { Button, Form, Input, Modal } from "antd";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { createPost } from "../redux/thunk";
+import { createPost } from "../redux/post/thunk";
 import { useForm } from "antd/es/form/Form";
 
 export const CreatePost = ({ posts }) => {

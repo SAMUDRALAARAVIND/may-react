@@ -1,8 +1,10 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchAllPosts, fetchUserInfo } from "./redux/thunk";
+import { fetchAllPosts, fetchUserInfo } from "./redux/post/thunk";
 import { UserInfo } from "./components/UserInfo";
 import { PostsList } from "./components/PostsList";
+import { Profile } from "./components/Profile";
+import "./styles/index.scss";
 
 const PostApp = () => {
   const dispatch = useDispatch();
@@ -14,9 +16,12 @@ const PostApp = () => {
   }, []);
 
   return (
-    <div>
-      <UserInfo />
-      <PostsList />
+    <div className="home-container">
+      <div className="left-box">
+        <UserInfo />
+        <PostsList />
+      </div>
+      <Profile />
     </div>
   );
 };

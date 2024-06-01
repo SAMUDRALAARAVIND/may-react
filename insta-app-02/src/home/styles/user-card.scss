@@ -1,0 +1,27 @@
+.user-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 100px;
+  width: min(50%, 90vw);
+  box-shadow: 1px 1px 4px #e3e3e3;
+  padding: 10px;
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .btn {
+    border: none;
+    padding: 6px 12px;
+    background-color: #0c5cff;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      scale: 1.02;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  height: 100vh;
+  overflow: scroll;
+  .left-box {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

@@ -1,5 +1,5 @@
-import { Endpoints } from "../../network/Endpoints";
-import { request } from "../../network/request";
+import { Endpoints } from "../../../network/Endpoints";
+import { request } from "../../../network/request";
 import {
   addPost,
   updatePostCreationStatus,

@@ -17,11 +17,16 @@ export const PostsList = () => {
           <div key={post._id} className="post">
             <b>{post.title}</b>
             <p>{post.content}</p>
-            <Carousel>
-              {post.imageUrls?.map((image, index) => {
-                return <img src={image} key={index} alt={image} />;
-              })}
-            </Carousel>
+            {post.imageUrls?.map((image, index) => {
+              return (
+                <img
+                  style={{ maxWidth: 200 }}
+                  src={image}
+                  key={index}
+                  alt={image}
+                />
+              );
+            })}
             <div className="footer">
               <div>
                 <span className="material-icons">favorite</span>

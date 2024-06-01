@@ -1,7 +1,10 @@
 .profile-container {
   display: flex;
   justify-content: space-between;
-
+  position: sticky;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px #e3e3e3;
+  top: 0;
   border-bottom: 1px solid #e3e3e3;
   padding: 10px;
   .user-info {
